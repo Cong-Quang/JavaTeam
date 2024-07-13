@@ -37,3 +37,8 @@ java [filename.java]
 - Pack for Java.
 - Code Runner.
 - Và các extension khác tùy nhu cầu của anh em.
+
+# Create File
+- Clone code này dìa, rồi mở folder chứa tên mình.
+- sau đó làm như trong zalo nhá 
+[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)
