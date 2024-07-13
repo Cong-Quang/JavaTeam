@@ -44,4 +44,4 @@ java [filename.java]
 - sau đó làm như trong zalo nhá.
 
 ## Hoặc Video Hướng Dẫn
-Bạn có thể tải video về từ [đây](audio/CreatelFile.mkv).
+Bạn có thể tải video về từ [đây](blob:https://github.com/c65d747b-dbe2-475f-adcc-76b506d55017).
