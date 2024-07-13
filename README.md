@@ -1,16 +1,39 @@
-# CHỈ thị
+# Chỉ Thị
 
-<ul>
-    <li>mỗi ngày 1 bài tập nhé</li>
-    <li>như chơi game vậy, yên tâm</li>
-    <li style="color: red;">t ghi lại quá trình đấy, lo mà làm cẩn thận cho t à</li>
-    <li>không nặng lắm đâu</li>    
-</ul>
+- Mỗi ngày một bài tập nhé.
+- Như chơi game vậy, yên tâm.
+- Tao ghi lại quá trình đấy, lo mà làm cẩn thận cho tao.
+- Không nặng lắm đâu.
+- Folder đứa nào đứa đó code, lén phén qua bên khác, tao xẻo.
 
-# Một số tài nguyên cần cài
+# Một Số Tài Nguyên Cần Cài
 
-<ul>
-    <li><a href="https://www.youtube.com/watch?v=PZ-8qox9Qpw" target="_blank">Git tại đây</a></li>
-    <li>như chơi game vậy, yên tâm</li>
-    <li>không nặng lắm đâu</li>    
-</ul>
+#### Git
+- [Tutorial Git](https://www.youtube.com/watch?v=PZ-8qox9Qpw).
+- Tải Git [tại đây](https://git-scm.com/downloads).
+
+#### Cấu Hình Git
+
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "you@example.com"
+```
+Coi hết video để biết thêm cách sử dụng.
+
+# Java
+- [Tải ](https://www.oracle.com/java/technologies/downloads/)Java cứ mới nhất mà dùng, exe hay msi đều cài được (phiên bản 20 trở lên).
+
+### Kiểm Tra Phiên Bản và Chạy Code
+
+```bash
+# Kiểm tra phiên bản
+java --version
+
+# Chạy code
+java [filename.java]
+```
+
+# Extensions
+- Pack for Java.
+- Code Runner.
+- Và các extension khác tùy nhu cầu của anh em.
