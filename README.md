@@ -40,5 +40,6 @@ java [filename.java]
 
 # Create File
 - Clone code này dìa, rồi mở folder chứa tên mình.
-- sau đó làm như trong zalo nhá 
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)
+- sau đó làm như trong zalo nhá.
+## Hoặc Video Hướng Dẫn
+Bạn có thể tải video về từ [đây](audio/CreatelFile.mkv).
