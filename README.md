@@ -29,7 +29,8 @@ Coi hết video để biết thêm cách sử dụng.
 # Kiểm tra phiên bản
 java --version
 
-# Chạy code
+# Chạy code lưu ý phải cd tới thư mục \src\main\java\com\example
+# mới java ... được nhá :> không ấn run được đâu hoặc có
 java [filename.java]
 ```
 
@@ -41,5 +42,6 @@ java [filename.java]
 # Create File
 - Clone code này dìa, rồi mở folder chứa tên mình.
 - sau đó làm như trong zalo nhá.
+
 ## Hoặc Video Hướng Dẫn
 Bạn có thể tải video về từ [đây](audio/CreatelFile.mkv).
