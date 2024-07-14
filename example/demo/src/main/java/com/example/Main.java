@@ -7,23 +7,22 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        Tuan tuan = new Tuan();
         Scanner scanner = new Scanner(System.in);
         System.out.println("Nhap a: ");
-        int a = scanner.nextInt();
+        tuan.a = scanner.nextInt();
         System.out.println("Nhap b: ");
-        int b = scanner.nextInt();
-
-        double c = Tuan.Chia(a, b);
-
-        System.out.println(Color.cRed + "Tong= " +Tuan.Cong(a, b));
-        System.out.println(Color.cGreen + "Hieu= " +Tuan.Tru(a, b));
-        System.out.println(Color.cBlue + "Tich= " +Tuan.Nhan(a, b));
-        if(c==0){
-            System.out.println(Color.cCyan+ "Khong the chia cho 0");
+        tuan.b = scanner.nextInt();
+        System.out.println(Color.cRed + "Tong: " + tuan.Cong(tuan.a, tuan.b));
+        System.out.println(Color.cGreen + "Tru: " + tuan.Tru(tuan.a, tuan.b));
+        System.out.println(Color.cYellow + "Nhan: " + tuan.Nhan(tuan.a, tuan.b));
+        if(tuan.Chia(tuan.a, tuan.b) == 0){
+            System.out.println(Color.cCyan + "Khong the chia cho 0");
         }
         else{
-            System.out.println(Color.cCyan + "Thuong= " +c);
+            System.out.println(Color.cCyan + "Chia: " + tuan.Chia(tuan.a,tuan.b));
         }
         Color.reset();
+        scanner.close();
     }
 }
