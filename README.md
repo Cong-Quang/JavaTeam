@@ -20,7 +20,7 @@ git config --global user.email "you@example.com"
 Coi hết video để biết thêm cách sử dụng.
 
 # Java
-- [Tải ](https://www.oracle.com/java/technologies/downloads/)Java cứ mới nhất mà dùng, exe hay msi đều cài được (phiên bản 20 trở lên).
+- [Tải](https://www.oracle.com/java/technologies/downloads/)Java cứ mới nhất mà dùng, exe hay msi đều cài được (phiên bản 20 trở lên).
 
 ### Kiểm Tra Phiên Bản và Chạy Code
 
@@ -34,8 +34,8 @@ java [filename.java]
 ```
 
 # Extensions
-- Pack for Java.
-- Code Runner.
+- [Pack for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack).
+- [Java Run](https://marketplace.visualstudio.com/items?itemName=caolin.java-run).
 - Và các extension khác tùy nhu cầu của anh em.
 
 # Create File
@@ -43,4 +43,4 @@ java [filename.java]
 - sau đó làm như trong zalo nhá.
 
 ## Hoặc Video Hướng Dẫn
-Bạn có thể tải video về từ [đây](audio/CreatelFile.mkv).
+Bạn có thể tải video về từ [đây](blob:https://github.com/c65d747b-dbe2-475f-adcc-76b506d55017).
