@@ -11,13 +11,13 @@ public class Color {
 
     // RGB colors constants
     final static String cIvory   = "\u001B[38;5;11m" ;
-    public static String cRed     = "\u001B[38;5;196m";
+    public final static String cRed     = "\u001B[38;5;196m";
     final static String cYellow  = "\u001B[38;5;220m";
-    final static String cGreen   = "\u001B[38;5;46m" ;
+    public final static String cGreen   = "\u001B[38;5;46m" ;
     final static String cWhite   = "\u001B[38;5;15m" ;
-    final static String cBlue    = "\u001B[38;5;21m" ;
+    public final static String cBlue    = "\u001B[38;5;21m" ;
     final static String cMagenta = "\u001B[38;5;129m";
-    final static String cCyan    = "\u001B[38;5;87m" ;
+    public final static String cCyan    = "\u001B[38;5;87m" ;
     final static String cPink    = "\u001B[38;5;198m";
     final static String cOrange  = "\u001B[38;5;214m";    
     final static String cGray    = "\u001B[38;5;251m";
