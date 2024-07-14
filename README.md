@@ -1,4 +1,4 @@
-# Chỉ Thị
+# Nhắc nhở
 
 - Mỗi ngày một bài tập nhé.
 - Như chơi game vậy, yên tâm.
