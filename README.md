@@ -20,7 +20,7 @@ git config --global user.email "you@example.com"
 Coi hết video để biết thêm cách sử dụng.
 
 # Java
-- [Tải](https://www.oracle.com/java/technologies/downloads/)Java cứ mới nhất mà dùng, exe hay msi đều cài được (phiên bản 20 trở lên).
+- [Tải](https://www.oracle.com/java/technologies/downloads/) Java cứ mới nhất mà dùng, exe hay msi đều cài được (phiên bản 20 trở lên).
 
 ### Kiểm Tra Phiên Bản và Chạy Code
 
