@@ -1,4 +1,4 @@
-package com.example;
+package com.example.accsset;
 
 import java.util.Random;
 
@@ -11,7 +11,7 @@ public class Color {
 
     // RGB colors constants
     final static String cIvory   = "\u001B[38;5;11m" ;
-    final static String cRed     = "\u001B[38;5;196m";
+    public static String cRed     = "\u001B[38;5;196m";
     final static String cYellow  = "\u001B[38;5;220m";
     final static String cGreen   = "\u001B[38;5;46m" ;
     final static String cWhite   = "\u001B[38;5;15m" ;
