@@ -1,8 +1,12 @@
 package com.example.Tuan;
 
 import java.util.Scanner;
+
 import com.example.accsset.Color;
 public class Tuan {
+    public Tuan(){
+        tinhtoan();
+    }
     private int a, b;
     public void tinhtoan(){
         Scanner scanner = new Scanner(System.in);
