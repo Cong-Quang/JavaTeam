@@ -4,7 +4,6 @@
 - Như chơi game vậy, yên tâm.
 - Tao ghi lại quá trình đấy, lo mà làm cẩn thận cho tao.
 - Không nặng lắm đâu.
-- Folder đứa nào đứa đó code, lén phén qua bên khác, tao xẻo.
 
 # Một Số Tài Nguyên Cần Cài
 
