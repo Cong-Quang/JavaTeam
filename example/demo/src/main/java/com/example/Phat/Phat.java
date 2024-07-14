@@ -1,6 +1,8 @@
 package com.example.Phat;
 import java.util.Scanner;
 
+import com.example.accsset.Color;
+
 public class Phat {
     public int x,y;
     // public void tinhtoan(){
@@ -35,16 +37,16 @@ public class Phat {
         Nhap.close();
     } 
     public void sum(){
-        System.out.println("Tong = "+(this.x + this.y));
+        System.out.println(Color.cRed + "Tong = "+(this.x + this.y));
     }
     public void tru(){
-        System.out.println("tru = "+(this.x - this.y));
+        System.out.println(Color.cGreen + "tru = "+(this.x - this.y));
     }
     public void nhan(){
-        System.out.println("Nhan = "+(this.x * this.y));
+        System.out.println(Color.cYellow + "Nhan = "+(this.x * this.y));
     }
     public void chia(){
-        System.err.println("Chia = "+(this.x / this.y));
+        System.err.println(Color.cCyan + "Chia = "+(this.x / this.y));
     }
     public void goi_ra(){
         nhan();
