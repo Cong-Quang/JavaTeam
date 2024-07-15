@@ -26,6 +26,12 @@ public class Handle {
         Console.print("[Chuc vu]", 0, 55);
     }
     public void ShowNV() {
+        Console.clear();
+        try {
+            Console.loader(nv.length * 3); // thêm màu mè th
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         khung();
         for (int i = 0; i < nv.length; i++) {
             FindShowNV(this.nv[i], i);
