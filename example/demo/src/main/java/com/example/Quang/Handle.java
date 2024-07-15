@@ -15,21 +15,6 @@ public class Handle {
         }
     }
 
-    public NhanVien getNV(int i) {
-        return this.nv[i];
-    }
-
-    public void setNV(int i, NhanVien nv) {
-        this.nv[i] = nv;
-    }
-
-    public NhanVien[] getFullNV() {
-        return nv;
-    }
-
-    public void setFullNV(NhanVien[] nv) {
-        this.nv = nv;
-    }
     private void khung(){
         // khung
         Console.clear();
@@ -43,11 +28,16 @@ public class Handle {
     public void ShowNV() {
         khung();
         for (int i = 0; i < nv.length; i++) {
-            Console.print("" + i, i+3, 3); // "" + i ép kiểu về string
-            Console.print(nv[i].getHo(), i+3, 7);
-            Console.print(nv[i].getTen(), i+3, 20);
+            FindShowNV(this.nv[i], i);
+        }
+    }
+    public void FindShowNV(NhanVien nv, int i) {
+            Console.print("" + (i+1), i+3, 3); // "" + i ép kiểu về string
+
+            Console.print(nv.getHo(), i+3, 7);
+            Console.print(nv.getTen(), i+3, 20);
             
-            int tuoi =  nv[i].getTuoi();
+            int tuoi =  nv.getTuoi();
             if (tuoi < 18) {
                 Console.print(Console.cRed + "" + tuoi, i+3, 32);
             }
@@ -58,9 +48,9 @@ public class Handle {
                 Console.print(Color.cYellow + "" + tuoi, i+3, 32);
             }
                 
-            Console.print("" + nv[i].getNgaySinh(), i+3, 40);
+            Console.print("" + nv.getNgaySinh(), i+3, 40);
             
-            switch (nv[i].getChucVu()) {
+            switch (nv.getChucVu()) {
                 case 0:
                     Console.print("Nhan vien" , i+3, 55);
                     break;
@@ -74,8 +64,52 @@ public class Handle {
                     Console.print("Lao Cong" , i+3, 55);
                     break;
             }
-        }
         System.out.println("\n");
     }
+    public NhanVien FindTuoi(int tuoi) {
+        for (NhanVien nv : this.nv) {
+            if (nv.getTuoi() == tuoi) {
+                return nv;
+            }
+        }
+        return null;
+    }
+
+    public NhanVien FindChucVu(int chucVu) {
+        for (NhanVien nv : this.nv) {
+            if (nv.getChucVu() == chucVu) {
+                return nv;
+            }
+        }
+        return null;
+    }
+
+    public NhanVien FindNgaySinh(int ngay, int thang, int nam) {
+        for (NhanVien nv : this.nv) {
+            if (nv.getNgaySinh().getDayOfMonth() == ngay && nv.getNgaySinh().getMonthValue() == thang && nv.getNgaySinh().getYear() == nam) {
+                return nv;
+            }
+        }
+        return null;
+    }
+
+    public NhanVien FindNamSinh(int nam) {
+        for (NhanVien nv : this.nv) {
+            if (nv.getNgaySinh().getYear() == nam) {
+                return nv;
+            }
+        }
+        return null;
+    }
+
+    public NhanVien FindThangSinh(int thang) {
+        for (NhanVien nv : this.nv) {
+            if (nv.getNgaySinh().getMonthValue() == thang) {
+                return nv;
+            }
+        }
+        return null;
+    }
+
 }
 
