@@ -84,7 +84,7 @@ public class Handle {
         return null;
     }
 
-    public NhanVien FindNgaySinh(int ngay, int thang, int nam) {
+    public NhanVien FindNgayThangNam(int ngay, int thang, int nam) {
         for (NhanVien nv : this.nv) {
             if (nv.getNgaySinh().getDayOfMonth() == ngay && nv.getNgaySinh().getMonthValue() == thang && nv.getNgaySinh().getYear() == nam) {
                 return nv;
@@ -92,7 +92,14 @@ public class Handle {
         }
         return null;
     }
-
+    public NhanVien FindNgaySinh(int ngay) {
+        for (NhanVien nv : this.nv) {
+            if (nv.getNgaySinh().getDayOfMonth() == ngay) {
+                return nv;
+            }
+        }
+        return null;
+    }
     public NhanVien FindNamSinh(int nam) {
         for (NhanVien nv : this.nv) {
             if (nv.getNgaySinh().getYear() == nam) {
