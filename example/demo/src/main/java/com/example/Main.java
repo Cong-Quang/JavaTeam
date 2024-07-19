@@ -1,6 +1,8 @@
 package com.example;
 
-import com.example.Tuan.Boss;
+//import com.example.Tuan; 
+import com.example.Tuan.Boss; // mi import sai ne
+
 //import com.example.Quang.Quang;
 //import com.example.Ngan.Ngan;
 //import com.example.Tuan.Tuan;
@@ -15,5 +17,6 @@ public class Main {
         // } catch (InterruptedException e) {
         //     e.printStackTrace();
         // }
+        
     }
 }
