@@ -8,7 +8,7 @@ public class NhanVien {
     private LocalDate ngaySinh;
     private int tuoi;
     private LocalDate ngayVaoLam;
-    private int chucVu = 0;  // 0 Truong Nhom 1 Nhan Vien 2 Thu Ki
+    private int chucVu = 0;  // 0 Truong Nhom 1 Thu Ki 2 Giam Sat
     public NhanVien(String ho, String ten, LocalDate ngaySinh, int tuoi, LocalDate ngayVaoLam, int chucVu) {
         this.ho=ho;
         this.ten=ten;

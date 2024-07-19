@@ -77,7 +77,7 @@ public class InOut {
                     break;
                 case 4:
                     // Xử lý chức năng xóa nhân viên dua tren chuc vu
-                    System.out.print("Vui long nhap chuc vu can xoa (0 Truong Nhom 1 Nhan Vien 2 Thu Ki): ");
+                    System.out.print("Vui long nhap chuc vu can xoa (0 Truong Nhom 1 Thu Ki 2 Giam Sat): ");
                     int chucVuXoa = scanner.nextInt();
                     scanner.nextLine();
                     dsnv.xoaNhanVien(chucVuXoa);

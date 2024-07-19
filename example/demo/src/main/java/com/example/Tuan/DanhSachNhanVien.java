@@ -50,7 +50,7 @@ public class DanhSachNhanVien {
                     chucVuStr = "Truong Nhom";
                     break;
                 case 1:
-                    chucVuStr = "Thu Ky";
+                    chucVuStr = "Thu Ki";
                     break;
                 case 2:
                     chucVuStr = "Giam Sat";
