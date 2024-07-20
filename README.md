@@ -42,7 +42,7 @@ java [filename.java]
 - [Pack for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack).
 - [Java Run](https://marketplace.visualstudio.com/items?itemName=caolin.java-run).
 - [Codium](https://marketplace.visualstudio.com/items?itemName=Codium.codium).
-- [Java Run] (https://marketplace.visualstudio.com/items?itemName=caolin.java-run).
+- [Java Run](https://marketplace.visualstudio.com/items?itemName=caolin.java-run).
 - Và các extension khác tùy nhu cầu của anh em.
 
 # Create File
