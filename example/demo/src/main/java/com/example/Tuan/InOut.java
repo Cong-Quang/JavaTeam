@@ -4,6 +4,7 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 //import java.time.format.DateTimeParseException;
 import java.util.Scanner;
+import com.example.accsset.Color;
 
 public class InOut {
     private DanhSachNhanVien dsnv = new DanhSachNhanVien();
@@ -11,14 +12,52 @@ public class InOut {
     private DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
     public int luachon = 0;
 
-    public InOut(DanhSachNhanVien dsnv) {
-        this.dsnv = dsnv;
-    }
-    
-    public InOut(){
-        Menu();
+    public static void loader(int total) throws InterruptedException {
+        for (int i = 0; i <= total; i++) {
+            progressBar(i, total);
+            Thread.sleep(50); 
+        }
+        clearLine();
     }
 
+    private static void progressBar(int current, int total) {
+        String[] animationFrames = {"|", "/", "-", "\\"};
+        int frameIndex = current % animationFrames.length;
+
+        int barLength = 100; 
+        int progress = (int) ((double) current / total * barLength);
+        String bar = "[";
+
+        // Tạo phần thanh tiến trình đã hoàn này
+        for (int i = 0; i < progress; i++) {
+            bar += '#';
+        }
+        // Tạo phần thanh tiến trình chưa hoàn thành
+        for (int i = progress; i < barLength; i++) {
+            bar += '-';
+        }
+        bar += "]";
+        // Tính toán phần trăm hoàn thành
+        int percent = (int) ((double) current / total * 100);
+        System.out.print(bar + "[" + percent + "%/100%]\r" + animationFrames[frameIndex]);
+    }
+
+    private static void clearLine() {
+        System.out.print("\r" + " ".repeat(120) + "\r"); // Giả sử thanh tiến trình không vượt quá 110 ký tự
+    }
+
+
+    public InOut(DanhSachNhanVien dsnv) {
+        this.dsnv = dsnv;
+        Color.clear();
+        try {
+            loader(100);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Menu();
+    }
+ 
     public void Menu(){
         do {
             System.out.println("MENU -----------");
