@@ -21,7 +21,12 @@ Coi hết video để biết thêm cách sử dụng.
 
 # Java
 - [Tải](https://www.oracle.com/java/technologies/downloads/) Java cứ mới nhất mà dùng, exe hay msi đều cài được (phiên bản 20 trở lên).
-
+- Đối với linux
+```bash
+  sudo apt update && sudo apt upgrade -y
+  java 
+```
+- Sau khi được gợi ý hãy trọn ver cao nhất rồi past lại cho terminal.
 ### Kiểm Tra Phiên Bản và Chạy Code
 
 ```bash
@@ -35,6 +40,8 @@ java [filename.java]
 
 # Extensions
 - [Pack for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack).
+- [Java Run](https://marketplace.visualstudio.com/items?itemName=caolin.java-run).
+- [Codium](https://marketplace.visualstudio.com/items?itemName=Codium.codium).
 - [Java Run](https://marketplace.visualstudio.com/items?itemName=caolin.java-run).
 - Và các extension khác tùy nhu cầu của anh em.
 
