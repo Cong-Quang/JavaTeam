@@ -1,4 +1,4 @@
-package main.java.com.example.Ngoc;
+package com.example.Ngoc;
 import java.util.ArrayList;
 import java.util.Scanner;
 
