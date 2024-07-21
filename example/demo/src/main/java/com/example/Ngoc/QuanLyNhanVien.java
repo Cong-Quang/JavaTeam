@@ -61,7 +61,7 @@ class NhanVien {
 public class QuanLyNhanVien {
     private static ArrayList<NhanVien> danhSachNhanVien = new ArrayList<>();
 
-    public static void main(String[] args) {
+    public QuanLyNhanVien() {
         Scanner scanner = new Scanner(System.in);
         while (true) {
             System.out.println("\n===== He thong Quan ly Nhan vien =====");
