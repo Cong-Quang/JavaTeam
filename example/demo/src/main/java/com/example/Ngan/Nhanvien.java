@@ -7,18 +7,16 @@ public class Nhanvien {
     private String ten;
     private int tuoi;
     private LocalDate ngaySinh;
-    private LocalDate ngayVaoLam;
     private int ChucVu = 0; // 0 nhân viên, 1 Quản lý, 2 Giám đốc
     private float Luong = 3600; 
     private int gioLam = 0;
     
     // Constructor
-    public Nhanvien(String ho, String ten, int tuoi, LocalDate ngaySinh, LocalDate ngayVaoLam, int chucVu) {
+    public Nhanvien(String ho, String ten, int tuoi, LocalDate ngaySinh, int chucVu) {
         this.ho = ho;
         this.ten = ten;
         this.tuoi = tuoi;
         this.ngaySinh = ngaySinh;
-        this.ngayVaoLam = ngayVaoLam;
         this.ChucVu = chucVu;
     }
 
@@ -54,14 +52,6 @@ public class Nhanvien {
         this.ngaySinh = ngaySinh;
     }
 
-    public LocalDate getNgayVaoLam() {
-        return ngayVaoLam;
-    }
-
-    public void setNgayVaoLam(LocalDate ngayVaoLam) {
-        this.ngayVaoLam = ngayVaoLam;
-    }
-
     public int getChucVu() {
         return ChucVu;
     }
@@ -69,19 +59,15 @@ public class Nhanvien {
     public void setChucVu(int chucVu) {
         ChucVu = chucVu;
     }
-
     public float getLuong() {
         return Luong;
     }
-
     public void setLuong(float luong) {
         Luong = luong;
     }
-
     public int getGioLamViec() {
         return gioLam;
     }
-
     public void setGioLamViec(int gioLamViec) {
         gioLam = gioLamViec;
     }
