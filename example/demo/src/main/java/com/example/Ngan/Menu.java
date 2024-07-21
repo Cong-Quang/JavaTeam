@@ -73,46 +73,30 @@ public class Menu {
         int thang = sc.nextInt();
         System.out.print("Nhap Nam Sinh (yyyy): ");
         int nam = sc.nextInt();
-        // System.out.print("Nhap Ngay Sinh (dd): ");
-        // int ngayLam = sc.nextInt();
-        // System.out.print("Nhap Thang Sinh (mm): ");
-        // int thangLam = sc.nextInt();
-        // System.out.print("Nhap Nam Sinh (yyyy): ");
-        // int namLam = sc.nextInt();
         System.out.print("Nhap Chuc vu (0: Nhan vien, 1: Quan ly, 2: Giam Doc): ");
         int chucVu = sc.nextInt();
-
         LocalDate ngaySinh = LocalDate.of(nam, thang, ngay);
-        // LocalDate ngayLamViec = LocalDate.of(namLam, thangLam, ngayLam);
     
         // Tạo đối tượng Nhanvien mới
         Nhanvien newEmployee = new Nhanvien(ho, ten, tuoi, ngaySinh, chucVu);
-    
-        // Tạo mảng mới với kích thước lớn hơn
         Nhanvien[] newDs = new Nhanvien[ds.length + 1];
         System.arraycopy(ds, 0, newDs, 0, ds.length);
         newDs[ds.length] = newEmployee;
-    
-        // Cập nhật danh sách nhân viên
         this.ds = newDs;
-    
-        System.out.println("Nhân viên đã được thêm thành công.");
-        showDS();  // Hiển thị danh sách cập nhật
+        showDS(); 
     }
     
 
     private void editEmploy() {
         System.out.print("STT nhan vien can sua : ");
-        int index = scanner.nextInt() - 1;
+        int i = scanner.nextInt() - 1;
         scanner.nextLine();  
-    
         // Kiểm tra chỉ số hợp lệ
-        if (index < 0 || index >= ds.length) {
+        if (i < 0 || i >= ds.length) {
             System.out.println("Loi!");
             return;
         }
-    
-        Nhanvien nv = ds[index];
+        Nhanvien nv = ds[i];
         System.out.println("Chon thong tin can sua: ");
         System.out.println("1. Ho");
         System.out.println("2. Ten");
@@ -122,7 +106,6 @@ public class Menu {
         System.out.print("Chon: ");
         int choice = scanner.nextInt();
         scanner.nextLine();  
-    
         switch (choice) {
             case 1:
                 System.out.print("Ho moi: ");
@@ -150,7 +133,6 @@ public class Menu {
                 System.out.println("Loi!");
                 return;
         }
-        // Hiển thị danh sách sau khi sửa đổi
         showDS();
     }
     
@@ -171,7 +153,6 @@ public class Menu {
                 DS[j++] = ds[i];
             }
         }
-
         ds = DS; //cập nhật ds
         showDS();
     }
@@ -218,7 +199,7 @@ public class Menu {
         String ho = scanner.nextLine();
         boolean found = true;
         for (Nhanvien nv : ds) {
-            if (nv.getHo().equalsIgnoreCase(ho)) {
+            if (nv.getHo().equalsIgnoreCase(ho)) { //so sánh 2 chuỗi ko phân biệt hoa thường
                 show_each(nv);
                 found = false;
             }

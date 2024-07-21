@@ -59,19 +59,15 @@ public class Nhanvien {
     public void setChucVu(int chucVu) {
         ChucVu = chucVu;
     }
-
     public float getLuong() {
         return Luong;
     }
-
     public void setLuong(float luong) {
         Luong = luong;
     }
-
     public int getGioLamViec() {
         return gioLam;
     }
-
     public void setGioLamViec(int gioLamViec) {
         gioLam = gioLamViec;
     }
