@@ -21,7 +21,6 @@ public class Print extends Color {
             showSpinner(i, total, row, col);
             Thread.sleep(100); 
         }
-        System.out.println(cRed + " Success! ");
         reset();
     }
 
@@ -42,11 +41,10 @@ public class Print extends Color {
         Print.print("NGAY SINH", 2, 40);
         Print.print("CHUC VU", 2, 55);
     }
-
     public void ShowDS(Nhanvien[] ds) {
         Print.clear();
         try {
-            Print.loader(ds.length * 3, 1, 35); 
+            Print.loader(ds.length, 1, 35); 
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
