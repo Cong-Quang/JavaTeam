@@ -86,9 +86,21 @@ public class InOut {
                     break;
                 case 5:
                     // Xử lý chức năng tìm nhân viên theo số tuổi
+                    System.out.println("Vui long nhap so tuoi can tim: ");
+                    int tuoiCanTim = scanner.nextInt();
+                    scanner.nextLine();
+                    dsnv.timNhanVienTheoTuoi(tuoiCanTim);
+                    System.out.println("Nhan Enter de tiep tuc...");
+                    scanner.nextLine();
                     break;
                 case 6:
                     // Xử lý chức năng tìm nhân viên theo chức vụ
+                    System.out.println("Vui long nhap chuc vu can tim (0 Truong Nhom 1 Thu Ki 2 Giam Sat): ");
+                    int chucVuCanTim = scanner.nextInt();
+                    scanner.nextLine();
+                    dsnv.timNhanVienTheoChucVu(chucVuCanTim);
+                    System.out.println("Nhan Enter de tiep tuc...");
+                    scanner.nextLine();
                     break;
                 case 7:
                     // Xử lý chức năng tìm nhân viên theo ngày sinh
