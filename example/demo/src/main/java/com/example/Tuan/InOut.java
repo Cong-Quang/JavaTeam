@@ -143,12 +143,29 @@ public class InOut {
                     break;
                 case 7:
                     // Xử lý chức năng tìm nhân viên theo ngày sinh
+                    System.out.println("Vui long nhap ngay sinh can tim (dd/MM/yyyy): ");
+                    String ngaySinhCanTim = scanner.nextLine();
+                    dsnv.timNhanVienTheoNgaySinh(ngaySinhCanTim);
+                    System.out.println("Nhan Enter de tiep tuc...");
+                    scanner.nextLine();
                     break;
                 case 8:
                     // Xử lý chức năng tìm nhân viên theo năm sinh
+                    System.out.println("Vui long nhap nam can tim: ");
+                    int namCanTim = scanner.nextInt();
+                    scanner.nextLine();
+                    dsnv.timNhanVienTheoNamSinh(namCanTim);
+                    System.out.println("Nhan Enter de tiep tuc...");
+                    scanner.nextLine();
                     break;
                 case 9:
                     // Xử lý chức năng tìm nhân viên theo tháng sinh
+                    System.out.println("Vui long nhap thang can tim: ");
+                    int thangCanTim = scanner.nextInt();
+                    scanner.nextLine();
+                    dsnv.timNhanVienTheoThangSinh(thangCanTim);
+                    System.out.println("Nhan Enter de tiep tuc...");
+                    scanner.nextLine();
                     break;
                 case 10:
                     System.out.println("Da thoat chuong trinh.");

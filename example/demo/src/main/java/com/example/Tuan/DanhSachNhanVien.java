@@ -1,5 +1,6 @@
 package com.example.Tuan;
 
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import com.example.accsset.Color;
 
@@ -46,6 +47,62 @@ public class DanhSachNhanVien {
         }
     }
 
+    public void timNhanVienTheoNgaySinh(String birthDate) {
+        danhSachTimDuoc.clear(); // Xóa danh sách tìm được cũ
+
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+
+        for (NhanVien nv : danhSach) {
+            if (nv.getbirthDate().format(formatter).equals(birthDate)) {
+                danhSachTimDuoc.add(nv);
+            }
+        }
+
+        // Nếu danh sách tìm không có phần tử, in ra số báo
+        if (danhSachTimDuoc.isEmpty()) {
+            System.out.println("Khong tim thay nhan vien nao voi ngay sinh nay.");
+        } else {
+            // In danh sách tìm được
+            inDanhSachNhanVien();
+        }
+    }
+
+    public void timNhanVienTheoNamSinh(int namSinh) {
+        danhSachTimDuoc.clear(); // Xóa danh sách tìm được cũ
+
+        for (NhanVien nv : danhSach) {
+            if (nv.getbirthDate().getYear() == namSinh) {
+                danhSachTimDuoc.add(nv);
+            }
+        }
+
+        // Nếu danh sách tìm không có phần tử, in ra thông báo
+        if (danhSachTimDuoc.isEmpty()) {
+            System.out.println("Khong tim thay nhan vien nao voi nam sinh nay.");
+        } else {
+            // In danh sách tìm được
+            inDanhSachNhanVien();
+        }
+    }
+
+    public void timNhanVienTheoThangSinh(int thangSinh) {
+        danhSachTimDuoc.clear(); // Xóa danh sách tìm được cũ
+
+        for (NhanVien nv : danhSach) {
+            if (nv.getbirthDate().getMonthValue() == thangSinh) {
+                danhSachTimDuoc.add(nv);
+            }
+        }
+
+        // Nếu danh sách tìm không có phần tử, in ra số báo
+        if (danhSachTimDuoc.isEmpty()) {
+            System.out.println("Khong tim thay nhan vien nao voi thang sinh nay.");
+        } else {
+            // In danh sách tìm được
+            inDanhSachNhanVien();
+        }
+    }
+    
     public void timNhanVienTheoChucVu(int chucVu) {
         danhSachTimDuoc.clear(); // Xóa danh sách tìm được cũ
 
@@ -116,7 +173,7 @@ public void inDanhSachNhanVien() {
                 (i + 1), nv.getHo(), nv.getTen(), nv.getTuoi());
         Color.reset();
         System.out.format("%-15s %-15s %-10s\n",
-                nv.getNgaySinh(), nv.getNgayVaoLam(), chucVuStr);
+                nv.getbirthDate(), nv.getNgayVaoLam(), chucVuStr);
         }
     }
 

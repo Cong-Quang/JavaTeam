@@ -5,14 +5,14 @@ import java.time.LocalDate;
 public class NhanVien {
     private String ho;
     private String ten;
-    private LocalDate ngaySinh;
+    private LocalDate birthDate;
     private int tuoi;
     private LocalDate ngayVaoLam;
     private int chucVu = 0;  // 0 Truong Nhom 1 Thu Ki 2 Giam Sat
-    public NhanVien(String ho, String ten, LocalDate ngaySinh, int tuoi, LocalDate ngayVaoLam, int chucVu) {
+    public NhanVien(String ho, String ten, LocalDate birthDate, int tuoi, LocalDate ngayVaoLam, int chucVu) {
         this.ho=ho;
         this.ten=ten;
-        this.ngaySinh=ngaySinh;
+        this.birthDate=birthDate;
         this.tuoi=tuoi;
         this.ngayVaoLam=ngayVaoLam;
         this.chucVu=chucVu;
@@ -33,11 +33,11 @@ public class NhanVien {
         this.ten=ten;
     }
 
-    public LocalDate getNgaySinh() {
-        return this.ngaySinh;
+    public LocalDate getbirthDate() {
+        return this.birthDate;
     }
-    public void setNgaySinh(LocalDate ngaySinh) {
-        this.ngaySinh=ngaySinh;
+    public void setbirthDate(LocalDate birthDate) {
+        this.birthDate=birthDate;
     }
 
     public int getTuoi() {  
