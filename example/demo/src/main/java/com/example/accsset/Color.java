@@ -25,7 +25,7 @@ public class Color {
     final static String cLagoon  = "\u001B[38;5;153m";
     final static String cSakura  = "\u001B[38;5;5m"  ;
     final static String cDenim   = "\u001B[38;5;20m" ;
-    final static String cBrown   = "\u001B[38;5;130m";
+    public final static String cBrown   = "\u001B[38;5;130m";
     final static String cBerry   = "\u001B[38;5;54m" ;
     final static String cPlum    = "\u001B[38;5;52m" ;
     final static String cBlack   = "\u001B[38;5;232m";
