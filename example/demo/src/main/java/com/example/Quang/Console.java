@@ -1,5 +1,8 @@
 package com.example.Quang;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import com.example.accsset.Color;
 
 public class Console extends Color { // extends là kế thừa những gì đã có ở trong lớp Color. nếu là private thì nó
@@ -56,6 +59,74 @@ public class Console extends Color { // extends là kế thừa những gì đã
         // Tính toán phần trăm hoàn thành
         int percent = (int) ((double) current / total * 100);
         System.out.print("\r[" + percent + "%]" + bar.toString());
+    }
+
+    private static void khung() {
+        // khung
+        clear();
+        print("[STT]", 0, 0);
+        print("[Ho]", 0, 8);
+        print("[Ten]", 0, 20);
+        print("[Tuoi]", 0, 30);
+        print("[Ngay Sinh]", 0, 40);
+        print("[Chuc vu]", 0, 55);
+    }
+
+    public static void ShowALLNV(NhanVien[] nv) {
+        clear();
+        try {
+            loader(nv.length * 3);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        khung();
+        for (int i = 0; i < nv.length; i++) {
+            FindShowNV(nv[i], i);
+        }
+    }
+
+    public static void FindShowNV(NhanVien nv, int i) {
+        print("" + (i + 1), i + 3, 3);
+
+        print(nv.getHo(), i + 3, 7);
+        print(nv.getTen(), i + 3, 20);
+
+        int tuoi = nv.getTuoi();
+        if (tuoi < 18) {
+            print(cRed + "" + tuoi, i + 3, 32);
+        } else if (tuoi > 18 && tuoi < 60) {
+            print(Console.cGreen + "" + tuoi, i + 3, 32);
+        } else {
+            print(cYellow + "" + tuoi, i + 3, 32);
+        }
+
+        print("" + nv.getNgaySinh(), i + 3, 40);
+
+        switch (nv.getChucVu()) {
+            case 0:
+                print("Nhan vien", i + 3, 55);
+                break;
+            case 1:
+                print("Quan ly", i + 3, 55);
+                break;
+            case 2:
+                print("Giam Doc", i + 3, 55);
+                break;
+            default: // mặc định nếu không kiếm thấy giá trị nào hợp lý. nó sẽ đi vô đây
+                print("Lao Cong", i + 3, 55);
+                break;
+        }
+        System.out.println("\n");
+    }
+
+    public static NhanVien[] FindNgaySinh(NhanVien[] nv, int NamSinh) {
+        List<NhanVien> nViens = new ArrayList<NhanVien>();
+        for (int i = 0; i < nv.length; i++) {
+            if (nv[i].getTuoi() == NamSinh) {
+                nViens.add(nv[i]);
+            }
+        }
+        return nViens.toArray(new NhanVien[0]);
     }
 
 }
