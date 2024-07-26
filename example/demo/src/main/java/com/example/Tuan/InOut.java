@@ -51,7 +51,7 @@ public class InOut {
         this.dsnv = dsnv;
         Color.clear();
         try {
-            loader(100);
+            loader(50);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
